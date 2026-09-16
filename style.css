@@ -1,0 +1,181 @@
+/* General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8c8dc;
+    color: #5a2846;
+    line-height: 1.6;
+}
+
+
+/* Header */
+header {
+    background-color: #6d2e52;
+    color: white;
+
+    padding: 20px 10%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+
+/* Navigation */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd6e7;
+}
+
+
+/* Home */
+#home {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #f8c8dc,
+        #f3a9c5
+    );
+}
+
+.home-content {
+    background-color: rgba(255, 255, 255, 0.45);
+
+    padding: 50px;
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(90, 40, 70, 0.2);
+}
+
+.home-content h2 {
+    font-size: 42px;
+    color: #6d2e52;
+    margin-bottom: 10px;
+}
+
+.home-content p {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #8a3d61;
+}
+
+
+/* Button */
+.btn {
+    display: inline-block;
+
+    margin-top: 25px;
+    padding: 12px 30px;
+
+    background-color: #6d2e52;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 25px;
+
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #8a3d61;
+}
+
+
+/* About Me */
+#about {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 35px;
+    color: #6d2e52;
+    margin-bottom: 30px;
+}
+
+.about-box {
+    max-width: 700px;
+    margin: auto;
+
+    background-color: #fff0f5;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(90, 40, 70, 0.15);
+}
+
+.about-box h3 {
+    font-size: 26px;
+    color: #6d2e52;
+    margin-bottom: 20px;
+}
+
+.about-box p {
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #6d2e52;
+    color: white;
+
+    text-align: center;
+    padding: 15px;
+}
+
+
+/* Mobile Design */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 5px 10px;
+    }
+
+    .home-content {
+        margin: 20px;
+        padding: 35px 20px;
+    }
+
+    .home-content h2 {
+        font-size: 30px;
+    }
+
+    .home-content p {
+        font-size: 20px;
+    }
+}
